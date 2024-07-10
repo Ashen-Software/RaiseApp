@@ -1,5 +1,6 @@
 import './header.css'
 import perosnas from '../../assets/personas.png'
+import { Link } from 'react-router-dom';
 
 function Header(){
 
@@ -11,7 +12,7 @@ function Header(){
             <span className='amarillo'>Empower</span> Your Community.</p>
             <p className='subtitulo-header'>Invest in the future of your city with secure, blockchain-powered funding.</p>
             </div>
-            <p className='explore-boton'>Explore</p>
+            <Link to={"/Explore"}className='explore-boton'>Explore</Link>
         </div>
         <p className='texto-abajo'>Join the movement. Build a stronger tomorrow. Together.</p>
         </>
