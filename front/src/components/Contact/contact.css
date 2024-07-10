@@ -1,9 +1,11 @@
 .contacto {
     display: flex;
-    
+    gap:5rem;
     color: #FFFFFF;
     text-align: left;
     justify-content: center;
+    padding-top: 15.569rem;
+    padding-bottom:16.931rem ;
 }
 
 .info-contact {

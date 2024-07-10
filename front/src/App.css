@@ -5,10 +5,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: #FFE922 black;
+    scroll-behavior: smooth;
+    
+}
 
+
+a{
+  text-decoration: none;
+  color: #fff;
 }
 
 #root{
   background-color: #072148;
-  height: 100vh;
+  height: 100%;
 }

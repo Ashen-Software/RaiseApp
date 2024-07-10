@@ -1,0 +1,83 @@
+.login-container{
+    background: linear-gradient(to right, #001432fc, #1d1e2400, #001432);
+    background-repeat: no-repeat;
+    height:100vh;
+    background-color: #001432;
+    display:flex;
+    justify-content: space-between;
+    color:#FFFFFF;
+    padding-top: 6rem;
+
+    .izq{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        .form{
+            max-width: 29.75rem;
+            padding: 5.375rem 4.125rem;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(0, 0, 0, .5);
+
+
+            gap:2rem;
+            .titulo-login{
+                font-weight: bold;
+                font-size: 1.625rem;
+            }
+            .inputs{
+                display: flex;
+                flex-direction : column;
+                gap: .6rem;
+                .input{
+                    width:21.438rem ;
+                    height: 3rem;
+                    border-radius: 6px;
+                    padding:  0.875rem 1rem;
+                }
+                .password-container{
+                    position: relative;
+                    
+                    display: flex;
+                    align-items: center;
+                    input{ width:21.438rem ;
+                        height: 3rem;
+                        border-radius: 6px;
+                        padding:  0.875rem 1rem;
+                    }
+                    img{
+                        position: absolute;
+                        right: 1rem;
+                        cursor: pointer;
+                    }
+                }
+            }
+            
+            button{
+                background-color: #FFE922;
+                padding: .8rem;
+                font-weight: bold;
+                border-radius: 6px;
+                border: none;
+            }
+
+            .sign-up{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                span{
+                    color: #FFE922;
+                }
+            }
+        }
+    }
+
+    .foto-login{
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
