@@ -7,8 +7,52 @@
     display:flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 12.5rem;
     
+
+
+    .subtitulo-header{
+        background-color: #FFE922;
+        width: 100%;
+        height: 5rem;
+        text-align: center;
+        font-size:2.125rem ;
+        font-weight: bold;
+        color:#373333;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .titulo-emprendimientos{
+        font-size: 4rem;
+        font-weight: bold;
+        padding-top: 5.25rem;
+    }
+    .header-explore{
+        background-image: url("../../assets/personas.png");
+        background-size: cover;
+        background-position: center; 
+        background-repeat: no-repeat;
+        box-shadow: inset 0 0 100rem rgba(0, 0, 0, 0.9); /* Sombra hacia adentro */
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-top: 14.375rem;
+        padding-bottom:11.186rem ;
+        color:#FFFFFF;
+        .titulo-explore{
+            font-size: 4rem;
+            font-weight: bold;
+        }
+        .texto-animado{
+            font-size: 3rem;
+        }
+
+
+    }
     .emprendimientos{
         display:flex;
         flex-wrap: wrap;
@@ -16,6 +60,7 @@
         width: 75.063rem;
         row-gap:4.75rem;
         gap:4.063rem;
+        padding: 5.25rem 0;
         
     }
 
@@ -26,6 +71,7 @@
         color:#FFFFFF;
         cursor:default;
         font-family: 'Fira Code', monospace;
+        padding-bottom: 8.938rem;
             p{
                 cursor:pointer;
             }
@@ -35,3 +81,20 @@
             }
     }
 }
+
+/*  Borrar ahorita */
+
+.search-bar {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+    font-size: 16px;
+}
+
+.highlight {
+    background-color: yellow;
+}
+

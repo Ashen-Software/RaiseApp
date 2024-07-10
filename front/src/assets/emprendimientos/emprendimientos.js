@@ -72,5 +72,37 @@ export default [
       descripcion: "Taller de manualidades para niños y adultos. ¡Crea, diviértete y explora tu creatividad!",
       img: sandwich, // Imagen de sandwich para todos
       calificacion: 4.5 // Calificación personalizada
+    },
+    {
+      nombre: "Taller de manualidades",
+      ciudad: "Medellín",
+      usuario: "@JUAN_ARTATTACK",
+      descripcion: "Taller de manualidades para niños y adultos. ¡Crea, diviértete y explora tu creatividad!",
+      img: sandwich, // Imagen de sandwich para todos
+      calificacion: 4.5 // Calificación personalizada
+    },
+    {
+      nombre: "Taller de manualidades",
+      ciudad: "Medellín",
+      usuario: "@JUAN_ARTATTACK",
+      descripcion: "Taller de manualidades para niños y adultos. ¡Crea, diviértete y explora tu creatividad!",
+      img: sandwich, // Imagen de sandwich para todos
+      calificacion: 4.5 // Calificación personalizada
+    },
+    {
+      nombre: "Taller de manualidades",
+      ciudad: "Medellín",
+      usuario: "@JUAN_ARTATTACK",
+      descripcion: "Taller de manualidades para niños y adultos. ¡Crea, diviértete y explora tu creatividad!",
+      img: sandwich, // Imagen de sandwich para todos
+      calificacion: 4.5 // Calificación personalizada
+    },
+    {
+      nombre: "Taller de manualidades",
+      ciudad: "Medellín",
+      usuario: "@JUAN_ARTATTACK",
+      descripcion: "Taller de manualidades para niños y adultos. ¡Crea, diviértete y explora tu creatividad!",
+      img: sandwich, // Imagen de sandwich para todos
+      calificacion: 4.5 // Calificación personalizada
     }
   ];
