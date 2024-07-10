@@ -1,5 +1,6 @@
 .contacto {
     display: flex;
+    
     color: #FFFFFF;
     text-align: left;
     justify-content: center;
@@ -7,16 +8,24 @@
 
 .info-contact {
     display: flex;
+    gap: 2rem;
     flex-direction: column;
     align-items: flex-end;
-    width: 50%;
+    width: 40%;
     
 }
 
+.img-contact {
+    width: 25rem;
+    object-fit: contain;
+}
+
 .titulo-contact {
+
     font-size: 3rem;
     font-weight: bold;
 }
+
 
 .parrafo-contact {
     font-size: 1.313rem;
@@ -41,7 +50,6 @@
     flex-direction: column;
     justify-content: center;
     
-    line-height:0;
     align-items: flex-end;
     
     
@@ -67,6 +75,7 @@
 }
 
 hr{
-        width: 50%;
-        
-    }
+    width: 10rem;
+    border: 2px solid #fdfdfd;
+    margin: 0;
+}

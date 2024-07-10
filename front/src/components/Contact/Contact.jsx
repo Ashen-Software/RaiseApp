@@ -1,16 +1,16 @@
 import './contact.css'
 import img from '../../assets/contact-img.png'
-import location from '../../assets/location.png'
-import email from '../../assets/email-icon.png'
-import github from '../../assets/github-icon.png'
+import location from '../../assets/location.svg'
+import email from '../../assets/email-icon.svg'
+import github from '../../assets/github-icon.svg'
 
 function Contact(){
     return(<div className='contacto'>
 
-        <img src={img} alt='contact-img' className='img-contact'/>
+        <img className='img-contact' src="https://syntrio.com/wp-content/uploads/2022/11/syntrio-contact-purple-us.png" alt='contact-img' />
 
         <div className='info-contact'>
-            <p className='titulo-contact'>GET IN <span className='amarillo'>TOUCH</span></p>
+            <p className='titulo-contact'>GET IN <span className='amarillo'> TOUCH</span></p>
             <hr style={{color: 'white'}}/>
 
             <p className='parrafo-contact'>Have questions about investing or launching a project? 
