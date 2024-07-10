@@ -3,6 +3,7 @@ import Nav from '../../components/Nav/Nav';
 import Emprendimiento from '../../components/Emprendimiento/Emprendimiento';
 import emprendimientos from '../../assets/emprendimientos/emprendimientos';
 import { useState } from 'react';
+import Footer from '../../components/Footer/Footer';
 
 function Explore(){
     const [currentPage, setCurrentPage] = useState(1);
@@ -25,24 +26,30 @@ function Explore(){
     }
 
     return(
-        <div className ='explore'>
-            <Nav/>
-            <div className='emprendimientos'>
-                {currentItems.map(emprendimiento => 
-                <Emprendimiento key={emprendimiento.nombre}
-                    nombre={emprendimiento.nombre} 
-                    ciudad={emprendimiento.ciudad} 
-                    usuario={emprendimiento.usuario}
-                     descripcion={emprendimiento.descripcion} 
-                     img={emprendimiento.img} 
-                     calificacion={emprendimiento.calificacion}/>)}
+        <>
+        
+        
+            <div className ='explore'>
+                <Nav/>
+                <div className='emprendimientos'>
+                    {currentItems.map(emprendimiento => 
+                    <Emprendimiento key={emprendimiento.nombre}
+                        nombre={emprendimiento.nombre} 
+                        ciudad={emprendimiento.ciudad} 
+                        usuario={emprendimiento.usuario}
+                        descripcion={emprendimiento.descripcion} 
+                        img={emprendimiento.img} 
+                        calificacion={emprendimiento.calificacion}/>)}
+                </div>
+                <div className='pagination'>
+                    <p onClick={handlePrevPage} disabled={currentPage === 1}> &lt;-- </p>
+                    <span>Page {currentPage}</span>
+                    <p onClick={handleNextPage} disabled={currentPage === Math.ceil(emprendimientos.length / itemsPerPage)}>--&gt; </p>
+                </div>
+                <Footer/>
             </div>
-            <div className='pagination'>
-                <button onClick={handlePrevPage} disabled={currentPage === 1}> &lt;-- </button>
-                <span>Page {currentPage}</span>
-                <button onClick={handleNextPage} disabled={currentPage === Math.ceil(emprendimientos.length / itemsPerPage)}>--&gt; </button>
-            </div>
-        </div>)
+        
+        </>)
 }
 
 export default Explore;

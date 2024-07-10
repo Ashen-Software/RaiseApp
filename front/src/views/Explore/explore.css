@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+
+
 .explore{
     background-color: #082147;
     display:flex;
     flex-direction: column;
     align-items: center;
-    
+    row-gap: 12.5rem;
     
     .emprendimientos{
         display:flex;
@@ -12,5 +16,22 @@
         width: 75.063rem;
         row-gap:4.75rem;
         gap:4.063rem;
+        
+    }
+
+    .pagination{
+        display:flex;
+        gap:1rem;
+        font-size: 1.875rem;
+        color:#FFFFFF;
+        cursor:default;
+        font-family: 'Fira Code', monospace;
+            p{
+                cursor:pointer;
+            }
+            p[disabled]{
+                color: #000000;
+                cursor:default;
+            }
     }
 }
