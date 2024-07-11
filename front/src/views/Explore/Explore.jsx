@@ -64,7 +64,8 @@ function Explore() {
                         descripcion={emprendimiento.descripcion} 
                         img={emprendimiento.img} 
                         calificacion={emprendimiento.calificacion}
-                        className={emprendimiento.nombre.toLowerCase().includes(searchTerm.toLowerCase()) ? 'highlight' : ''}/>)}
+                        className= "emprendimiento"//{emprendimiento.nombre.toLowerCase().includes(searchTerm.toLowerCase()) ? 'highlight' : ''}
+                        />)}
                 </div>
                 <div className='pagination'>
                     <p onClick={handlePrevPage} disabled={currentPage === 1}> &lt;-- </p>

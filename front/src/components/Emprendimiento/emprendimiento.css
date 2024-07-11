@@ -1,3 +1,13 @@
+@keyframes show{ /*Tampoco prestar atencion*/
+    from{
+        opacity: 0; scale:10%
+    }
+    to{
+        opacity: 1; scale:100%
+    }
+}
+
+
 .emprendimiento-container{
     background-color:#FFFFFF;
     border-radius: 14px;
@@ -8,6 +18,13 @@
     justify-content: center;
     align-items: center;
     gap:0.438rem;
+    
+    view-timeline-name: --reveal; /* No prestar atencion */
+    animation-name: show;
+    animation-fill-mode: both;
+    animation-timeline: --reveal;
+    animation-range: entry 25% cover 50%;
+
 
     .nombre-emprendimiento{
         font-size: 1.813rem;
