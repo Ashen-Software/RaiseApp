@@ -1,9 +1,9 @@
 @keyframes show{ /*Tampoco prestar atencion*/
     from{
-        opacity: 0; scale:10%
+        opacity: .5; scale:95%
     }
     to{
-        opacity: 1; scale:100%
+        opacity: 1; scale:100% 
     }
 }
 
@@ -18,18 +18,20 @@
     justify-content: center;
     align-items: center;
     gap:0.438rem;
-    
+    opacity: .9;
     view-timeline-name: --reveal; /* No prestar atencion */
     animation-name: show;
-    animation-fill-mode: both;
+    animation-fill-mode:both;
     animation-timeline: --reveal;
     animation-range: entry 25% cover 50%;
 
+    transition: all .3s;
 
     .nombre-emprendimiento{
         font-size: 1.813rem;
         font-weight: 500;
         text-align: center;
+        cursor: pointer;
     }
 
     .usuario-y-ciudad{
@@ -53,6 +55,7 @@
         width:19.875rem;
         height: 12.375rem;
         border-radius: 6px;
+        cursor:pointer;
     }
 
     .descripcion-y-rating{
@@ -87,4 +90,9 @@
     
 
    
+}
+
+.emprendimiento-container:hover{
+    transform: scale(1.1);
+    opacity: 1;
 }

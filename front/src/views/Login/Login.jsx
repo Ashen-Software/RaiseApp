@@ -17,9 +17,11 @@ function Login(){
     return (
         <>
         
-            <Nav/>
+            
             <div className="login-container">
                 <div className="izq">
+                    <Nav/>
+                    <div className="form-container">
                     <form className="form">
                         <p className="titulo-login">Sign In</p>
                         <div className= 'inputs'>
@@ -45,11 +47,16 @@ function Login(){
                             <span>Sign up now</span>
                         </div>
                     </form>
+                    </div>
+                    
 
 
                 </div>
-
+                <div className="right">
                 <img className="foto-login" src={personas}/>
+                </div>
+
+                
             </div>
         </>
     

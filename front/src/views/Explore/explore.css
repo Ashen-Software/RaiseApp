@@ -87,13 +87,10 @@
 /*  Borrar ahorita */
 
 .search-bar {
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 100%;
-    max-width: 400px;
-    font-size: 16px;
+    border-radius: 10px;
+    width: 44.375rem;
+    height: 2.25rem;
+    padding: 0 1rem;
 }
 
 .highlight {

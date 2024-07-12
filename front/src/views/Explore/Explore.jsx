@@ -11,11 +11,9 @@ function Explore() {
     const [searchTerm, setSearchTerm] = useState(''); //No va
     const itemsPerPage = 9;
 
-    const filteredItems = searchTerm  //No va
-        ? emprendimientos.filter(emprendimiento =>
-            emprendimiento.nombre.toLowerCase().includes(searchTerm.toLowerCase())
-          )
-        : emprendimientos;
+    const filteredItems = searchTerm ? emprendimientos.filter(emprendimiento =>
+         emprendimiento.nombre.toLowerCase().includes(searchTerm.toLowerCase())
+          ): emprendimientos;
 
     const indexOfLastItem = currentPage * itemsPerPage;
     const indexOfFirstItem = indexOfLastItem - itemsPerPage;
@@ -47,7 +45,7 @@ function Explore() {
                     <TextoAnimado className="texto-animado"/>
                     <input
                         type="text"
-                        placeholder="Search..."
+                        placeholder="🔍︎ Search"
                         value={searchTerm}
                         onChange={handleSearch}
                         className="search-bar"
@@ -57,13 +55,8 @@ function Explore() {
                 <p className='titulo-emprendimientos amarillo'>Emprendimientos</p>
                 <div className='emprendimientos'>
                     {currentItems.map(emprendimiento => 
-                    <Emprendimiento key={emprendimiento.nombre}
-                        nombre={emprendimiento.nombre} 
-                        ciudad={emprendimiento.ciudad} 
-                        usuario={emprendimiento.usuario}
-                        descripcion={emprendimiento.descripcion} 
-                        img={emprendimiento.img} 
-                        calificacion={emprendimiento.calificacion}
+                    <Emprendimiento key={emprendimiento.id}
+                        props = {emprendimiento}
                         className= "emprendimiento"//{emprendimiento.nombre.toLowerCase().includes(searchTerm.toLowerCase()) ? 'highlight' : ''}
                         />)}
                 </div>
