@@ -51,6 +51,35 @@ const CrearEmprendimiento = () => {
               
             </div>
           </div>
+          <label htmlFor="mensaje-conact" className='mensaje-contact'>
+                Mensaje del Contact
+                <textarea placeholder='La descripción...' name="description" id="mensaje" cols="100" rows="5" />
+              </label>
+
+              
+    
+              <div className='div-rapido'>
+    <label for="correo_electronico" className="label-rapido">Correo electrónico:</label>
+        <input type="email" id="correo_electronico" name="correo_electronico" className="input-rapido" required/>
+
+    <label for="telefono" className="label-rapido">Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono" className="input-rapido" required/>
+
+    <label for="facebook" className="label-rapido">Facebook:</label>
+    <input type="text" id="facebook" name="facebook" className="input-rapido" required/>
+
+    <label for="instagram" className="label-rapido">Instagram:</label>
+    <input type="text" id="instagram" name="instagram" className="input-rapido" required/>
+
+    <label for="direccion" className="label-rapido">Dirección:</label>
+    <input type="text" id="direccion" name="direccion" className="input-rapido" required/>
+
+    <label for="wallet_id" className="label-rapido">Enter bussiness wallet id:</label>
+
+    <input type="text" id="wallet_id" name="wallet_id" className="input-rapido" required/>
+
+    <button type="submit">Send</button>
+    </div>
         </form>
       </div>
       <Footer/>
