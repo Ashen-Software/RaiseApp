@@ -88,3 +88,52 @@
         }
     }
 }
+
+
+.mensaje-contact{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Fira Code', monospace;
+    font-size: 1.5rem;
+    input{
+    padding: 1rem;
+    border-radius: 6px;
+    border: none;}
+}
+
+
+
+.input-rapido{
+    padding: 1rem;
+    border-radius: 6px;
+    border: none;
+
+
+}
+
+.label-rapido{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Fira Code', monospace;
+    font-size: 1.5rem;
+}
+
+.div-rapido{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 2rem;;
+    
+    button{
+        padding: 1rem;
+        border-radius: 6px;
+        border: none;
+        width: 12.375rem;
+        margin: auto;
+        font-size: 1.5rem;
+        background-color: #FFE922;
+        color: #000000;
+        font-family: 'Fira Code', monospace;
+        cursor: pointer;
+    }
+}
